@@ -1,0 +1,39 @@
+.button, 
+.button__ghost {
+   border-radius: .2rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   column-gap: .5rem;
+}
+
+.button {
+   background-color: var(--black-color);
+   color: var(--white-color);
+   font-weight: var(--font-medium);
+   padding: 1.1rem 1.5rem;
+   transition: background-color .4s ease;
+}
+
+.button i {
+   font-size: 1.17rem;
+}
+
+.button:is(:hover, :active) {
+   background-color: var(--first-color);
+}
+
+.button__ghost {
+   border: 3px solid var(--black-color);
+   color: var(--black-color);
+   padding: .5rem;
+   transition: border .4s ease, color .4s ease;
+}
+
+.button__ghost i {
+   font-size: 1.25rem;
+}
+
+.button__ghost:is(:hover, :active) {
+   border: 3px solid var(--first-color);
+}

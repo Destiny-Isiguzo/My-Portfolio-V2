@@ -96,7 +96,7 @@
                 class="home__social-link" 
                 title="Linkedin profile" 
                 target="_blank">
-                <i class="ri-linkedin-box-fill"></i>
+                <i class="ri-linkedin-box-fill" aria-label="Linkedin icon"></i>
               </a>
   
               <a 
@@ -104,7 +104,7 @@
                 class="home__social-link" 
                 title="GitHub profile" 
                 target="_blank">
-                <i class="ri-github-fill"></i>
+                <i class="ri-github-fill" aria-label="GitHub icon"></i>
               </a>
   
               <a 
@@ -112,7 +112,7 @@
                 class="home__social-link" 
                 title="Telegram profile" 
                 target="_blank">
-                <i class="ri-telegram-fill"></i>
+                <i class="ri-telegram-fill" aria-label="Telegram icon"></i>
               </a>
             </div>
           </div>
@@ -124,7 +124,7 @@
 
             <a href="#about" class="home__scroll">
               <div class="home__scroll-box">
-                <i class="ri-arrow-down-s-line"></i>
+                <div class="home__scroll-box-line"></div>
               </div>
 
               <span class="home__scroll-text">Scroll Down</span>
@@ -374,12 +374,13 @@
             </h2>
 
             <p class="contact__description-1">
-              Get in touch with me anytime, through email or social media <br><br>
-              The contact form provided here is for <b>business purposes only</b>. Any questions can be directed to my social media.
+              <!-- Reach out to me via the form below for business inquiries. General questions can be directed to my social media profiles. -->
+               
+              For <b>business inquiries</b>, please use the contact form below. For general questions or casual chats, connect with me on social media!
             </p>
 
             <p class="contact__description-2">
-              I need your <b>Name</b> and <b>Email Address</b>. You won't receive anything other than your reply.
+              I need your <b>Name</b> and <b>Email Address</b>. No spam or newsletters, just your reply!
             </p>
 
             <div class="geometric-box"></div>
@@ -393,20 +394,73 @@
             <form action="https://formsubmit.co/markdestiny673@gmail.com" method="POST" class="contact__form" id="contact-form">
               <div class="contact__group">
                 <div class="contact__box">
-                  <label for="name" class="contact__label"></label>
-                  <input type="text" class="contact__input" id="name" name="Name" required placeholder="" />
+                  <label for="name" class="contact__label">First Name</label>
+                  <input type="text" class="contact__input" id="name" name="Name" required placeholder="First Name" />
                 </div>
 
                 <div class="contact__box">
-                  <label for="name" class="contact__label"></label>
-                  <input type="text" class="contact__input" id="name" name="Name" required placeholder="" />
+                  <label for="email" class="contact__label">Email Address</label>
+                  <input type="email" class="contact__input" id="email" name="Email" required placeholder="Email Address" />
                 </div>
               </div>
+
+              <div class="contact__box">
+                <label for="subject" class="contact__label">Subject</label>
+                <input type="text" class="contact__input" id="subject" name="Subject" required placeholder="Subject" />
+              </div>
+
+              <div class="contact__box contact__area">
+                <label for="message" class="contact__label">Message</label>
+                <textarea class="contact__input" id="message" name="Message" required placeholder="Your message..."></textarea>
+              </div>
+
+              <button class="contact__button button" type="submit">
+                Send Message
+                <i class="ri-send-plane-fill" aria-label="send message icon"></i>
+              </button>
             </form>
           </div>
 
           <div class="contact__social">
+            <img src="public/curved-arrow-image.svg" alt="Contact alt image" class="contact__social-arrow">
 
+            <div class="contact__social-data">
+              <div>
+                <p class="contact__social-description-1">
+                  Having issues sending emails?
+                </p>
+
+                <p class="contact__social-description-2">
+                  You can reach me through my active social networks.
+                </p>
+              </div>
+
+              <div class="contact__social-links">
+                <a 
+                  href="mailto:markdestiny673@gmail.com" 
+                  class="contact__social-link"
+                  title="Email"
+                  target="_blank">
+                  <i class="ri-mail-line" aria-label="Email icon"></i>
+                </a>
+
+                <a 
+                  href="https://www.instagram.com/_destiny.i_/" 
+                  target="_blank" 
+                  class="contact__social-link"
+                  title="Instagram profile">
+                  <i class="ri-instagram-fill" aria-label="Instagram icon"></i>
+                </a>
+
+                <a 
+                  href="https://t.me/D_ni_si" 
+                  class="contact__social-link" 
+                  title="Telegram profile" 
+                  target="_blank">
+                  <i class="ri-telegram-fill" aria-label="Telegram icon"></i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

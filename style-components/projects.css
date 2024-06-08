@@ -17,11 +17,6 @@
    margin-bottom: .75rem;
 }
 
-.projects__img {
-   border-radius: .2rem;
-   /* border: 2.5px solid var(--black-color); */
-}
-
 .projects__button {
    position: absolute;
    right: 1rem;
@@ -87,5 +82,5 @@
 }
 
 .projects__card:hover {
-   background-color: var(--white-color);
+   /* background-color: var(--white-color); */
 }

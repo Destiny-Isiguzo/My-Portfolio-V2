@@ -108,23 +108,28 @@
 }
 
 .home__scroll-text {
+   color: var(--black-color);
+   font-size: .9rem;
    display: none;
 }
 
 .home__scroll-box {
-   background-color: var(--black-color);
-   border-radius: .2rem;
+   border: 2px solid var(--black-color);
+   border-radius: .75rem;
    color: var(--white-color);
-   height: 38px;
-   width: 38px;
+   width: 20px;
+   height: 30px;
    display: grid;
    place-items: center;
-   font-size: 1.3rem;
    overflow: hidden;
    transition: background-color .4s ease;
 }
 
-.home__scroll-box i {
+.home__scroll-box-line {
+   background-color: var(--black-color);
+   border-radius: 2rem;
+   width: 2px;
+   height: 7px;
    animation: scroll-down 2.5s infinite;
 }
 

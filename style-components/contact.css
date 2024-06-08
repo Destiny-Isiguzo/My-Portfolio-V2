@@ -136,3 +136,55 @@
    background-color: var(--first-color);
    cursor: pointer;
 }
+
+.contact__social {
+   background-color: hsl(0, 0%, 10%);
+   display: grid;
+   row-gap: 1rem;
+   padding-block: 1rem 2rem;
+   text-align: center;
+}
+
+.contact__social-arrow {
+   width: 32px;
+   margin: 0 auto;
+}
+
+.contact__social-data {
+   display: flex;
+   flex-direction: column;
+   row-gap: 1.5rem;
+}
+
+.contact__social-description-1 {
+   color: var(--text-color-light);
+   font-size: var(--small-font-size);
+   margin-bottom: .5rem;
+}
+
+.contact__social-description-2 {
+   color: var(--white-color);
+   font-size: var(--small-font-size);
+   font-weight: var(--font-semi-bold);
+}
+
+.contact__social-links {
+   display: flex;
+   justify-content: center;
+   column-gap: .75rem;
+}
+
+.contact__social-link {
+   background-color: var(--black-color-light);
+   border-radius: .2rem;
+   color: var(--white-color);
+   display: grid;
+   place-items: center;
+   font-size: 1.25rem;
+   padding: 6px;
+   transition: background-color .4s ease;
+}
+
+.contact__social-link:is(:hover, :active) {
+   background-color: var(--first-color);
+}

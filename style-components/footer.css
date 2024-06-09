@@ -1,0 +1,36 @@
+.footer {
+   background-color: var(--black-color);
+}
+
+.footer__container {
+   padding-block: 3rem 2rem;
+   place-items: center;
+   /* row-gap: 2.5rem; */
+}
+
+.footer__links {
+   display: flex;
+   justify-content: center;
+   column-gap: 2rem;
+}
+
+.footer__link {
+   color: var(--text-color-light);
+   transition: color .4s ease;
+}
+
+.footer__link:is(:hover, :active),
+.footer-recent-update-link:is(:hover, :active) {
+   color: var(--white-color);
+}
+
+.footer-recent-update-link {
+   color: var(--text-color-light);
+   transition: color .4s ease;
+}
+
+.footer__copy {
+   color: var(--text-color-light);
+   font-size: var(--small-font-size);
+   text-align: center;
+}

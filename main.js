@@ -7,6 +7,7 @@ import './style-components/button-utils.css';
 import './style-components/services.css';
 import './style-components/projects.css';
 import './style-components/contact.css';
+import './style-components/footer.css';
 import './style-components/style.css';
 
 
@@ -57,3 +58,34 @@ window.addEventListener('scroll', () => {
       header.classList.remove('shadow-header');
    }
 })
+
+
+
+
+
+// Footer year
+const year = document.getElementById('year');
+const currentYear = new Date().getFullYear();
+year.innerText = currentYear;
+
+
+
+
+
+// Scrollup button show & hide
+const scrollUpBtn = document.getElementById('scrollup__button');
+
+scrollUpBtn.addEventListener('click', () => {
+	window.scrollTo({
+		top: 0,
+		behavior: 'smooth',
+	});
+});
+
+window.addEventListener('scroll', () => {
+	if (window.scrollY > 2000) {
+		scrollUpBtn.classList.add('scrollup__button-show');
+	} else {
+      scrollUpBtn.classList.remove('scrollup__button-show');
+	}
+});

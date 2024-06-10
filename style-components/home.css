@@ -115,7 +115,7 @@
 }
 
 .home__scroll-box {
-   border: 2.4px solid var(--black-color);
+   border: 2.4px solid var(--scrolldown-color);
    border-radius: .75rem;
    color: var(--white-color);
    width: 20px;
@@ -127,11 +127,11 @@
 }
 
 .home__scroll-box-line {
-   background-color: var(--black-color);
+   background-color: var(--scrolldown-color);
    border-radius: 2rem;
    width: 2px;
    height: 7px;
-   animation: scroll-down 2.2s infinite;
+   /* animation: scroll-down 2.2s infinite; */
 }
 
 @keyframes scroll-down {
@@ -146,7 +146,7 @@
    }
 
    100% {
-      transform: translateY(.6rem);
+      transform: translateY(.1rem);
       opacity: 0;
    }
 }

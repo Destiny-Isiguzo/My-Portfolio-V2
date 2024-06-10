@@ -39,7 +39,7 @@
 }
 
 .services__icon i {
-   color: var(--black-color);
+   color: var(--scrolldown-color);
    font-size: 2rem;
    position: relative;
    z-index: 5;

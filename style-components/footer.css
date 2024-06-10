@@ -26,6 +26,7 @@
 
 .footer-recent-update-link {
    color: var(--text-color-light);
+   font-size: .92rem;
    transition: color .4s ease;
 }
 

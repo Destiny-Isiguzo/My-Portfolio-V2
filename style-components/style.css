@@ -15,6 +15,7 @@
    --text-color-light: hsl(0, 0%, 64%);
    --body-color: hsl(0, 0%, 87%);
    --container-color: hsl(0, 0%, 83%);
+   --scrolldown-color: black;
  
    /* Font and typography */
    /*.5rem = 8px | 1rem = 16px ...*/
@@ -36,6 +37,29 @@
    /* z index */
    --z-tooltip: 10;
    --z-fixed: 100;
+}
+
+
+/* Dark color theme variables */
+body.dark-theme {
+   --first-color: hsl(14, 80%, 50%);
+   --black-color: hsl(0, 0%, 18%);
+   --black-color-light: hsl(0, 0%, 30%);
+   --title-color: hsl(0, 0%, 95%);
+   --text-color: hsl(0, 0%, 70%);
+   --body-color: hsl(0, 0%, 8%);
+   --container-color: hsl(0, 0%, 12%);
+   --scrolldown-color: white;
+}
+
+
+.dark-theme .shadow-header {
+   box-shadow: 0 2.5px 20px hsla(0, 0%, 0%, .6);
+}
+
+.dark-theme .section__title-1::after,
+.dark-theme .section__title-2::after {
+   background-color: hsla(14, 70%, 50%, .2);
 }
 
 
@@ -61,6 +85,7 @@ body {
    font-size: var(--normal-font-size);
 	min-height: 100vh;
 	text-rendering: optimizeSpeed;
+   transition: background-color .4s ease, color .4s ease;
 }
 
 
@@ -112,5 +137,3 @@ h1, h2, h3, h4 {
 .scrollup__button-show {
    transform: translateX(0);
 }
-
-/* Theme */

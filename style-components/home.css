@@ -17,6 +17,7 @@
 }
 
 .home__img {
+   border-radius: .2rem;
    position: relative;
    z-index: 10;
 }

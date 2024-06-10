@@ -35,7 +35,6 @@ if (navClose) {
 }
 
 
-
 // Remove nav menu on link click
 const navLink = document.querySelectorAll('.nav__link');
 
@@ -43,10 +42,6 @@ const linkAction = () => {
    navMenu.classList.remove('show-menu');
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
-
-
-
-
 
 
 // Header shadow on scroll
@@ -60,16 +55,10 @@ window.addEventListener('scroll', () => {
 })
 
 
-
-
-
 // Footer year
 const year = document.getElementById('year');
 const currentYear = new Date().getFullYear();
 year.innerText = currentYear;
-
-
-
 
 
 // Scrollup button show & hide
@@ -89,3 +78,25 @@ window.addEventListener('scroll', () => {
       scrollUpBtn.classList.remove('scrollup__button-show');
 	}
 });
+
+
+// Scroll sections active link
+const sections = document.querySelectorAll('section[id]');
+
+const scrollActive = () => {
+   const scrollDown = window.scrollY;
+
+   sections.forEach(current => {
+      const sectionHeight = current.offsetHeight;
+      const sectionTop = current.offsetTop - 58;
+      const sectionId = current.getAttribute('id');
+      const sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']');
+
+      if (scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight) {
+         sectionsClass.classList.add('active-link');
+      } else {
+         sectionsClass.classList.remove('active-link');
+      }
+   })
+}
+window.addEventListener('scroll', scrollActive);

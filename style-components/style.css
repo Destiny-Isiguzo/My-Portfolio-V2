@@ -62,6 +62,27 @@ body.dark-theme {
    background-color: hsla(14, 70%, 50%, .2);
 }
 
+.dark-theme :is(.home__arrow, .home__line, .about__line) {
+   filter: none;
+}
+
+.dark-theme .home__description b {
+   background: linear-gradient(90deg, hsla(14, 80%, 50%, .3), 
+                                       hsla(14, 80%, 50%, 0));
+}
+
+.dark-theme .projects__card:hover{
+   background-color: var(--body-color);
+}
+
+.dark-theme :is(.contact__mail, .contact__input) {
+   background-color: var(--container-color);
+}
+
+.dark-theme .footer {
+   background-color: hsl(0, 0%, 4%);
+}
+
 
 /* Responsive typography */
 @media screen and (min-width: 1150px) {

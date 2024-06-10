@@ -5,7 +5,7 @@
    top: 0;
    left: 0;
    z-index: var(--z-fixed);
-   transition: box-shadow .4s ease;
+   transition: box-shadow .4s ease, background-color .4s ease;
 }
 
 .nav {

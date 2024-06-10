@@ -131,7 +131,7 @@
    border-radius: 2rem;
    width: 2px;
    height: 7px;
-   /* animation: scroll-down 2.2s infinite; */
+   animation: scroll-down 2.2s infinite;
 }
 
 @keyframes scroll-down {

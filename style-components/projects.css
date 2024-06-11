@@ -84,3 +84,13 @@
 .projects__card:hover {
    background-color: var(--white-color);
 }
+
+
+/* Medium devices */
+/* breakpoint 576px media query */
+@media screen and (min-width: 36em) {
+   .projects__container {
+      grid-template-columns: 350px;
+      justify-content: center;
+   }
+}

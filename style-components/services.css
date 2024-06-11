@@ -58,3 +58,12 @@
    font-size: var(--h2-font-size);
    margin-bottom: 1.25rem;
 }
+
+
+/* Medium devices */
+/* breakpoint 576px media query */
+@media screen and (min-width: 36em) {
+   .services__container {
+      grid-template-columns: 280px;
+   }
+}

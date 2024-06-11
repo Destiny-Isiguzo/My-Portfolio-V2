@@ -67,3 +67,12 @@
       grid-template-columns: 280px;
    }
 }
+
+
+/* Semi-medium devices */
+/* breakpoint 768px media query */
+@media screen and (min-width: 48em) {
+   .services__container {
+      grid-template-columns: repeat(2, 260px);
+   }
+}

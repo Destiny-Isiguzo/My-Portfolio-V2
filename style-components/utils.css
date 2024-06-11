@@ -63,3 +63,27 @@
 .main {
    overflow: hidden; /* For ScrollReveal animation */
 }
+
+
+
+/* Large devices */
+/* breakpoint 1150px media query */
+@media screen and (min-width: 71.875em) {
+   .container {
+      margin-inline: auto;
+   }  
+
+   .section {
+      padding-block: 7rem 2rem;
+   }
+
+   .section__title-1::after,
+   .section__title-2::after {
+      width: 70px;
+      height: 48px;
+   }
+
+   .geometric-box {
+      transform: scale(1.2);
+   }
+}

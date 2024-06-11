@@ -79,6 +79,10 @@ body.dark-theme {
    background-color: var(--container-color);
 }
 
+.dark-theme .contact__social-arrow {
+   filter: none;
+}
+
 .dark-theme .footer {
    background-color: hsl(0, 0%, 4%);
 }

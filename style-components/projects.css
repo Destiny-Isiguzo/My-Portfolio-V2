@@ -103,3 +103,21 @@
       grid-template-columns: repeat(2, 350px);
    }
 }
+
+
+/* Large devices */
+/* breakpoint 1150px media query */
+@media screen and (min-width: 71.875em) {
+   .projects__container {
+      grid-template-columns: repeat(3, 352px);
+      padding-block: 3rem 1rem;
+   }
+
+   .projects__card {
+      padding: 1.25rem 1.25rem 2.5rem;
+   }
+
+   .projects__image {
+      margin-bottom: 1rem;
+   }
+}

@@ -37,3 +37,16 @@
 .button__ghost:is(:hover, :active) {
    border: 3px solid var(--first-color);
 }
+
+
+/* Large devices */
+/* breakpoint 1150px media query */
+@media screen and (min-width: 71.875em) {
+   .button__ghost {
+      padding: .75rem;
+   }
+
+   .button__ghost i {
+      font-size: 1.5rem;
+   }
+}

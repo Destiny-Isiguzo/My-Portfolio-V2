@@ -109,7 +109,7 @@
 @media screen and (min-width: 71.875em) {
    .about__container {
       /* grid-template-columns: 440px 525px; */
-      grid-template-columns: 740px;
+      grid-template-columns: 870px;
       gap: 1rem 9rem;
       /* align-items: center; */
       padding-block: 1rem;

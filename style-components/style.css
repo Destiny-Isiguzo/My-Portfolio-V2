@@ -83,6 +83,10 @@ body.dark-theme {
    filter: none;
 }
 
+.dark-theme .contact__data {
+   box-shadow: 4px 0 8px hsla(0, 0%, 4%, .4);
+}
+
 .dark-theme .footer {
    background-color: hsl(0, 0%, 4%);
 }
@@ -147,7 +151,8 @@ h1, h2, h3, h4 {
    right: 1rem;
    bottom: 12rem;
    z-index: var(--z-tooltip);
-   transition: transform .4s ease;
+   opacity: 0;
+   transition: all .4s ease;
    transform: translateX(200%);
 }
 
@@ -160,5 +165,6 @@ h1, h2, h3, h4 {
 }
 
 .scrollup__button-show {
+   opacity: 1;
    transform: translateX(0);
 }

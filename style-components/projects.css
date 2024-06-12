@@ -110,6 +110,7 @@
 @media screen and (min-width: 71.875em) {
    .projects__container {
       grid-template-columns: repeat(3, 352px);
+      align-items: flex-start;
       padding-block: 3rem 1rem;
    }
 
@@ -119,5 +120,13 @@
 
    .projects__image {
       margin-bottom: 1rem;
+   }
+
+   .projects__content {
+      margin-bottom: 2rem;
+   }
+
+   .projects__button {
+      right: 1.25rem;
    }
 }

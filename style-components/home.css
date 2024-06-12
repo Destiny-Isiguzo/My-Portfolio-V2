@@ -131,7 +131,7 @@
    background-color: var(--scrolldown-color);
    border-radius: 2rem;
    width: 2.4px;
-   height: 7px;
+   height: 8px;
    animation: scroll-down 2.1s infinite;
 }
 
@@ -147,7 +147,7 @@
    }
 
    100% {
-      transform: translateY(.1rem);
+      transform: translateY(.6rem);
       opacity: 0;
    }
 }
@@ -167,7 +167,7 @@
 /* breakpoint 1150px media query */
 @media screen and (min-width: 71.875em) {
    .home__container {
-      grid-template-columns: repeat(2, 460px);
+      grid-template-columns: repeat(2, 550px);
       align-items: center;
       gap: 2rem 4rem;
       padding-block: 5.5rem;
@@ -229,13 +229,14 @@
 
    .home__arrow {
       top: 4.5rem;
-      left: -8rem;
-      rotate: 80deg;
+      left: -7rem;
+      rotate: 85deg;
       width: 80px;
    }
 
    .home__line {
-      left: -15rem;
+      display: none;
+      left: -5rem;
       bottom: -2rem;
       width: 80px;
       rotate: 30deg;

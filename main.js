@@ -1,6 +1,7 @@
 import './style-components/resets.css';
 import './style-components/utils.css';
 import './style-components/header.css';
+import './style-components/preloader.css';
 import './style-components/home.css';
 import './style-components/about.css';
 import './style-components/button-utils.css';
@@ -130,3 +131,41 @@ themeButton.addEventListener('click', () => {
    localStorage.setItem('selected-theme', getCurrentTheme());
    localStorage.setItem('selected-icon', getCurrentIcon());
 })
+
+
+// Scroll reveal animation
+const sr = ScrollReveal({
+   origin: 'bottom',
+   distance: '60px',
+   duration: 2500,
+   delay: 400,
+   // reset: true
+})
+
+sr.reveal(`.home__perfil, .contact__mail`, {origin: 'right'});
+sr.reveal(`.home__name, .home__info, .contact__social, .contact__data`, {origin: 'left'});
+sr.reveal(`.services .section__title-2, .projects .section__title-1, .about__container, .footer__container`, {
+   opacity: 0,
+   distance: '0px',
+})
+sr.reveal(`.services__card, .projects__card`, {interval: 110});
+
+
+// Preloader
+const loaderWrapper = document.getElementById('loader-wrapper');
+const loader = document.getElementById('loader');
+
+// timeout to end loader animation after 1 second (in ms)
+setTimeout(() => {
+	loaderWrapper.classList.add('loaded');
+	loader.classList.add('loaded');
+}, 1000);
+
+// window.addEventListener('DOMContentLoaded', () => {
+// 	loaderWrapper.classList.add('loaded');
+//    loader.classList.add('loaded');
+// })
+
+loaderWrapper.addEventListener('transitionend', () => {
+	loaderWrapper.parentNode.removeChild(loaderWrapper);
+});

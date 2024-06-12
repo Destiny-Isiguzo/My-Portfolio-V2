@@ -26,7 +26,7 @@
 
 .footer-recent-update-link {
    color: var(--text-color-light);
-   font-size: .92rem;
+   font-size: var(--small-font-size);
    transition: color .4s ease;
 }
 
@@ -34,4 +34,23 @@
    color: var(--text-color-light);
    font-size: var(--small-font-size);
    text-align: center;
+}
+
+
+/* Large devices */
+/* breakpoint 1150px media query */
+@media screen and (min-width: 71.875em) {
+   .footer__container {
+      grid-template-columns: repeat(3, max-content);
+      padding-block: 4rem;
+      justify-content: space-between;
+   }
+
+   .footer__links {
+      column-gap: 3rem;
+   }
+
+   .footer__copy {
+      order: -1;
+   }
 }

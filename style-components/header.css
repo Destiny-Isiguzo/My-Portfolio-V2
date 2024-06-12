@@ -150,7 +150,7 @@
 }
 
 .shadow-header  {
-   box-shadow: 0 2.5px 20px hsla(0, 0%, 0%, .08);
+   box-shadow: 0 2.5px 25px hsla(0, 0%, 0%, .05);
 }
 
 .active-link {
@@ -189,7 +189,7 @@
 @media screen and (min-width: 71.875em) {
    .nav {
       column-gap: 4rem;
-      height: calc(var(--header-height) + 1rem);
+      height: calc(var(--header-height) + .8rem);
    }
 
    .nav__close,
@@ -229,7 +229,7 @@
       background-color: var(--black-color);
       border-radius: .2rem;
       color: var(--white-color);
-      padding: 1rem 1.4rem;
+      padding: .75rem 1.2rem;
    }
 
    .nav__link-button:is(:hover, :active) {
@@ -238,5 +238,13 @@
 
    .nav__link-button::after {
       background-color: transparent;
+   }
+
+   .change-theme {
+      color: var(--text-color);
+   }
+
+   .change-theme:hover {
+      color: var(--title-color);
    }
 }

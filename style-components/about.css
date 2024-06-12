@@ -102,3 +102,8 @@
       justify-content: center;
    }
 }
+
+
+/* Large devices */
+/* breakpoint 1150px media query */
+@media screen and (min-width: 71.875em) {}

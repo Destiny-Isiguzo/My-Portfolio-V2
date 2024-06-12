@@ -54,7 +54,7 @@ body.dark-theme {
 
 
 .dark-theme .shadow-header {
-   box-shadow: 0 2.5px 20px hsla(0, 0%, 0%, .6);
+   box-shadow: 0 2.5px 25px hsla(0, 0%, 0%, .6);
 }
 
 .dark-theme .section__title-1::after,

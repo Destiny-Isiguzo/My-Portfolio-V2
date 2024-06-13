@@ -199,6 +199,12 @@
       display: none;
    }
 
+   .nav__logo-circle {
+      font-size: 1.25rem;
+      height: 2.5rem;
+      width: 2.5rem;
+   }
+
    .nav__list {
       column-gap: 4rem;
       flex-direction: row;
